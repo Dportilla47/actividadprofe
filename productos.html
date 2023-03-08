@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.88.1">
+  <title>Mi Tienda</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- styles sidebars -->
+  <link href="assets/css/sidebars.css" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <div class="flex-shrink-0 p-3 bg-white" style="width: 280px;">
+      <a href="index.html" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+        <img src="assets/images/logos/tienda.png" alt="Logo tienda">
+        <span class="fs-3 ms-2 fw-semibold">Mi Tienda</span>
+      </a>
+      <ul class="list-unstyled ps-0">
+        <li class="mb-1">
+          <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+            data-bs-target="#home-collapse" aria-expanded="true">
+            Inicio
+          </button>
+          <div class="collapse show" id="home-collapse">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a href="productos.html" class="link-dark rounded">Producto</a></li>
+              <li><a href="categorias.html" class="link-dark rounded">Categoria</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="border-top my-3"></li>
+        <li class="mb-1">
+          <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+            data-bs-target="#account-collapse" aria-expanded="false">
+            Cuenta
+          </button>
+          <div class="collapse" id="account-collapse">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a href="usuarios.html" class="link-dark rounded">Usuario</a></li>
+              <li><a href="signin.html" class="link-dark rounded">Cerrar session</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="container-fluid">
+      <div class="row mt-2">
+        <div class="card">
+          <h5 class="card-header">Añadir Productos</h5>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-3">
+                <div class="mb-3">
+                  <label for="formGroupExampleInput" class="form-label">Codigo</label>
+                  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Codigo del producto">
+                </div>
+              </div>
+              <div class="col">
+                <div class="mb-3">
+                  <label for="formGroupExampleInput2" class="form-label">Descripción</label>
+                  <input type="text" class="form-control" id="formGroupExampleInput2"
+                    placeholder="Descripción del producto">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-3">
+                <div class="mb-3">
+                  <label for="formGroupExampleInput3" class="form-label">Cantidad</label>
+                  <input type="text" class="form-control" id="formGroupExampleInput3" placeholder="Cantidad">
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="mb-3">
+                  <label for="formGroupExampleInput4" class="form-label">Precio</label>
+                  <input type="text" class="form-control" id="formGroupExampleInput4" placeholder="Precio">
+                </div>
+              </div>
+              <div class="col">
+                <div class="mb-3">
+                  <label for="formGroupExampleInput5" class="form-label">Categoria</label>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Seleccione</option>
+                    <option value="1">Aseo</option>
+                    <option value="2">Lacteos</option>
+                    <option value="3">Enlatados</option>
+                    <option value="4">Licores</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="text-center">
+              <button type="button" class="btn btn-success ">Guardar</button>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="card">
+            <h5 class="card-header">Lista de Productos</h5>
+            <div class="card-body">          
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/sidebars.js"></script>
+</body>
+
+</html>

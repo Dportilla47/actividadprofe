@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.88.1">
+  <title>Mi Tienda</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- styles sidebars -->
+  <link href="assets/css/sidebars.css" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <div class="flex-shrink-0 p-3 bg-white" style="width: 280px;">
+      <a href="index.html" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+        <img src="assets/images/logos/tienda.png" alt="Logo tienda">
+        <span class="fs-3 ms-2 fw-semibold">Mi Tienda</span>
+      </a>
+      <ul class="list-unstyled ps-0">
+        <li class="mb-1">
+          <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+            data-bs-target="#home-collapse" aria-expanded="true">
+            Inicio
+          </button>
+          <div class="collapse show" id="home-collapse">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a href="productos.html" class="link-dark rounded">Producto</a></li>
+              <li><a href="productos.html" class="link-dark rounded">Categoria</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="border-top my-3"></li>
+        <li class="mb-1">
+          <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+            data-bs-target="#account-collapse" aria-expanded="false">
+            Cuenta
+          </button>
+          <div class="collapse" id="account-collapse">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a href="usuarios.html" class="link-dark rounded">Usuario</a></li>
+              <li><a href="signin.html" class="link-dark rounded">Cerrar session</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="container-fluid">
+      <div class="row mt-2">
+        <h3>La Tienda</h3>
+        <img src="assets/images/productos.jpg" class="img-fluid" alt="imagen con productos">
+      </div>
+    </div>
+  </main>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/sidebars.js"></script>
+</body>
+
+</html>
